@@ -5,5 +5,3 @@ repository:
   description: Grafana Loki is a set of resources that can be combined into a fully featured logging stack
   homepage: https://cloudposse.com/accelerate
   topics: terraform, terraform-component
-
-
