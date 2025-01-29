@@ -47,7 +47,7 @@ module "basic_auth_ssm_parameters" {
 
 module "loki_storage" {
   source  = "cloudposse/s3-bucket/aws"
-  version = "4.2.0"
+  version = "4.10.0"
 
   for_each = toset(["chunks", "ruler", "admin"])
 
