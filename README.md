@@ -78,10 +78,10 @@ components:
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_alb_controller_ingress_group"></a> [alb\_controller\_ingress\_group](#module\_alb\_controller\_ingress\_group) | cloudposse/stack-config/yaml//modules/remote-state | 1.5.0 |
+| <a name="module_alb_controller_ingress_group"></a> [alb\_controller\_ingress\_group](#module\_alb\_controller\_ingress\_group) | cloudposse/stack-config/yaml//modules/remote-state | 1.8.0 |
 | <a name="module_basic_auth_ssm_parameters"></a> [basic\_auth\_ssm\_parameters](#module\_basic\_auth\_ssm\_parameters) | cloudposse/ssm-parameter-store/aws | 0.13.0 |
-| <a name="module_dns_gbl_delegated"></a> [dns\_gbl\_delegated](#module\_dns\_gbl\_delegated) | cloudposse/stack-config/yaml//modules/remote-state | 1.5.0 |
-| <a name="module_eks"></a> [eks](#module\_eks) | cloudposse/stack-config/yaml//modules/remote-state | 1.5.0 |
+| <a name="module_dns_gbl_delegated"></a> [dns\_gbl\_delegated](#module\_dns\_gbl\_delegated) | cloudposse/stack-config/yaml//modules/remote-state | 1.8.0 |
+| <a name="module_eks"></a> [eks](#module\_eks) | cloudposse/stack-config/yaml//modules/remote-state | 1.8.0 |
 | <a name="module_iam_roles"></a> [iam\_roles](#module\_iam\_roles) | ../../account-map/modules/iam-roles | n/a |
 | <a name="module_loki"></a> [loki](#module\_loki) | cloudposse/helm-release/aws | 0.10.1 |
 | <a name="module_loki_storage"></a> [loki\_storage](#module\_loki\_storage) | cloudposse/s3-bucket/aws | 4.10.0 |
