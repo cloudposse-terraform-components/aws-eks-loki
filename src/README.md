@@ -14,7 +14,6 @@ Log data itself is then compressed and stored in chunks in object stores such as
 filesystem.
 
 This component deploys the [grafana/loki](https://github.com/grafana/loki/tree/main/production/helm/loki) helm chart.
-
 ## Usage
 
 **Stack Level**: Regional
@@ -37,7 +36,10 @@ components:
 > endpoint.
 
 <!-- prettier-ignore-start -->
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- prettier-ignore-end -->
+
+
+<!-- markdownlint-disable -->
 ## Requirements
 
 | Name | Version |
@@ -139,12 +141,17 @@ components:
 | <a name="output_metadata"></a> [metadata](#output\_metadata) | Block status of the deployed release |
 | <a name="output_ssm_path_basic_auth_password"></a> [ssm\_path\_basic\_auth\_password](#output\_ssm\_path\_basic\_auth\_password) | If enabled, the path in AWS SSM to find the password for basic auth |
 | <a name="output_url"></a> [url](#output\_url) | The hostname used for this Loki deployment |
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-<!-- prettier-ignore-end -->
+<!-- markdownlint-restore -->
+
+
 
 ## References
 
-- [cloudposse/terraform-aws-components](https://github.com/cloudposse/terraform-aws-components/tree/main/modules/eks/loki) -
-  Cloud Posse's upstream component
+
+- [cloudposse-terraform-components](https://github.com/orgs/cloudposse-terraform-components/repositories) - Cloud Posse's upstream component
+
+
+
 
 [<img src="https://cloudposse.com/logo-300x69.svg" height="32" align="right"/>](https://cpco.io/homepage?utm_source=github&utm_medium=readme&utm_campaign=cloudposse-terraform-components/aws-eks-loki&utm_content=)
+
