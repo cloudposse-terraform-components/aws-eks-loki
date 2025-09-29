@@ -92,6 +92,7 @@ variable "default_schema_config" {
     from         = string
     object_store = string
     schema       = string
+    store        = string
     index = object({
       prefix = string
       period = string
@@ -117,6 +118,7 @@ variable "additional_schema_config" {
     from         = string
     object_store = string
     schema       = string
+    store        = string
     index = object({
       prefix = string
       period = string
