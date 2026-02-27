@@ -67,7 +67,7 @@ components:
 | <a name="module_eks"></a> [eks](#module\_eks) | cloudposse/stack-config/yaml//modules/remote-state | 1.8.0 |
 | <a name="module_iam_roles"></a> [iam\_roles](#module\_iam\_roles) | ../../account-map/modules/iam-roles | n/a |
 | <a name="module_loki"></a> [loki](#module\_loki) | cloudposse/helm-release/aws | 0.10.1 |
-| <a name="module_loki_storage"></a> [loki\_storage](#module\_loki\_storage) | cloudposse/s3-bucket/aws | 4.10.0 |
+| <a name="module_loki_storage"></a> [loki\_storage](#module\_loki\_storage) | cloudposse/s3-bucket/aws | 4.11.0 |
 | <a name="module_loki_tls_label"></a> [loki\_tls\_label](#module\_loki\_tls\_label) | cloudposse/label/null | 0.25.0 |
 | <a name="module_this"></a> [this](#module\_this) | cloudposse/label/null | 0.25.0 |
 
