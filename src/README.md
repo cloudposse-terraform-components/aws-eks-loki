@@ -43,24 +43,17 @@ components:
 ## Requirements
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0.0 |
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 4.0, < 6.0.0 |
 | <a name="requirement_helm"></a> [helm](#requirement\_helm) | >= 2.0.0, < 3.0.0 |
 | <a name="requirement_kubernetes"></a> [kubernetes](#requirement\_kubernetes) | >= 2.7.1, != 2.21.0 |
 | <a name="requirement_random"></a> [random](#requirement\_random) | >= 2.3 |
 
-## Providers
-
-| Name | Version |
-|------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 4.0, < 6.0.0 |
-| <a name="provider_random"></a> [random](#provider\_random) | >= 2.3 |
-
 ## Modules
 
 | Name | Source | Version |
-|------|--------|---------|
+| ---- | ------ | ------- |
 | <a name="module_alb_controller_ingress_group"></a> [alb\_controller\_ingress\_group](#module\_alb\_controller\_ingress\_group) | cloudposse/stack-config/yaml//modules/remote-state | 1.8.0 |
 | <a name="module_basic_auth_ssm_parameters"></a> [basic\_auth\_ssm\_parameters](#module\_basic\_auth\_ssm\_parameters) | cloudposse/ssm-parameter-store/aws | 0.13.0 |
 | <a name="module_dns_gbl_delegated"></a> [dns\_gbl\_delegated](#module\_dns\_gbl\_delegated) | cloudposse/stack-config/yaml//modules/remote-state | 1.8.0 |
@@ -74,7 +67,7 @@ components:
 ## Resources
 
 | Name | Type |
-|------|------|
+| ---- | ---- |
 | [random_pet.basic_auth_username](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/pet) | resource |
 | [random_string.basic_auth_password](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/string) | resource |
 | [aws_eks_cluster_auth.eks](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/eks_cluster_auth) | data source |
@@ -82,7 +75,7 @@ components:
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+| ---- | ----------- | ---- | ------- | :------: |
 | <a name="input_additional_schema_config"></a> [additional\_schema\_config](#input\_additional\_schema\_config) | A list of additional `configs` for the `schemaConfig` for the Loki chart. This list will be merged with the default schemaConfig.config defined by `var.default_schema_config` | <pre>list(object({<br/>    from         = string<br/>    object_store = string<br/>    schema       = string<br/>    store        = string<br/>    index = object({<br/>      prefix = string<br/>      period = string<br/>    })<br/>  }))</pre> | `[]` | no |
 | <a name="input_additional_tag_map"></a> [additional\_tag\_map](#input\_additional\_tag\_map) | Additional key-value pairs to add to each map in `tags_as_list_of_maps`. Not added to `tags` or `id`.<br/>This is for some rare cases where resources want additional configuration of tags<br/>and therefore take a list of maps with tag key, value, and additional configuration. | `map(string)` | `{}` | no |
 | <a name="input_alb_controller_ingress_group_component_name"></a> [alb\_controller\_ingress\_group\_component\_name](#input\_alb\_controller\_ingress\_group\_component\_name) | The name of the eks/alb-controller-ingress-group component. This should be an internal facing ALB | `string` | `"eks/alb-controller-ingress-group"` | no |
@@ -135,7 +128,7 @@ components:
 ## Outputs
 
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 | <a name="output_basic_auth_username"></a> [basic\_auth\_username](#output\_basic\_auth\_username) | If enabled, the username for basic auth |
 | <a name="output_id"></a> [id](#output\_id) | The ID of this deployment |
 | <a name="output_metadata"></a> [metadata](#output\_metadata) | Block status of the deployed release |
